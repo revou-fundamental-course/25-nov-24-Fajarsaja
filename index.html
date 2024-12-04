@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="index.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Kalkulator BMI</h2>
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+                 bentuk tubuh yang menunjang penampilan, berat badan ideal juga 
+                 menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, 
+                 hitung sekarang di kalkulator BMI.
+            </p>
+            
+                 <div class="form-group label">
+                    <label>Jenis Kelamin</label>  
+                        <label class="radio-label"><input type="radio" name="gender" value="male"> Pria</label>
+                        <label class="radio-label"><input type="radio" name="gender" value="female"> Wanita</label>
+                </div>
+                <div class="form-group">
+                    <label>Berat Badan (kg)</label>
+                    <input id="bb" type="number">
+                </div>
+                <div class="form-group">
+                    <label>Usia (tahun)</label>
+                    <input id="age" type="number">
+                </div>
+                <div class="form-group">
+                    <label>Tinggi badan (cm)</label>
+                    <input id="tb" type="number" >
+                </div>
+                <div>
+                    <button onclick="hasilBmi()" class="btn btn-primary">Hitung BMI</button>
+                    <button onclick="reset()" class="btn btn-secondary">Reset</button>
+                </div>
+            
+               
+           
+            <div class="fitur">
+                <h2>Keunggulan fitur</h2>
+                <ul>
+                    <li>1. Menghitung berat badan</li>
+                    <li>2. Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>3. Mempersiapkan program penurunan berat badan</li>
+                </ul>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita
+                     hamil atau menyusui tidak boleh mengandalkan pembacaan BMI i
+                     ni) dan tidak ada tindakan yang harus diambil berdasarkan ni
+                     lainya selain berkonsultasi dengan orang yang memenuhi syara
+                     t seperti dokter.</p>
+                <p>Kalkulator akan memberi Anda gambaran tentang perbandingan ber
+                    at badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI)
+                     dihitung sebagai berat badan Anda (dalam kilogram) dibagi den
+                     gan tinggi badan Anda (dalam meter) kuadrat.</p>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Hasil</h1>
+            <div class="result">
+                <div  class="bmi-value">
+                    <h2 id="result"></h2>
+                </div>
+
+                <p id="kategoriBmi">
+            
+                </p>
+                
+                <button class="btn btn-primary">Download Hasil BMI</button>
+                <p id="keteranganBmi">
+                    
+                </p>
+                <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+                    tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih
+                    lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat
+                     badan Anda.
+                </p>
+            </div>
+            <div class="penyakit">
+                <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
+                <ul>
+                    <li>Diabetes</li>
+                    <li>Hipertensi</li>
+                    <li>Sakit Jantung</li>
+                    <li>Osteoarthritis</li>
+                </ul>
+                <button class="btn btn-primary">Konsultasi Dokter Via Aplikasi</button>
+                <button class="btn btn-secondary">Registrasi Online Sekarang</button>
+            </div>
+            <div class="download-app"> <p>download aplikasi</p>
+                <img src="assets/app.jpg" alt="google-play"></img>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
